@@ -49,14 +49,19 @@ footer
 	bottom: 0;	
 }
 
-button 
+button, 
+.btn
 {
     background-color: #4cb480;
     border: none;
     padding: 1em 2em;
     color: white;
+    width: 5em;
 }
 
+.btn:hover {
+    opacity: 0.9;
+}
 .page
 {
 	background-color: #fff;
@@ -317,10 +322,26 @@ em
     text-align: left;
     position: relative;
     padding: 2em;
-    border-top: 3px solid #4cb480;
+    border-top-width: 3px;
+    border-top-style: solid;
     font-family: "Barlow", sans-serif;
+    margin-bottom: 1em;
 }
 
+.opening.open
+{
+	border-top-color: #4cb480;
+}
+.opening.filled
+{
+	border-top-color: gray;
+	opacity: 0.65;
+}
+
+.opening.filled:hover
+{
+	opacity: 0.85;
+}
 
 .opening h1,
 .opening h2,
@@ -337,10 +358,13 @@ em
     margin-top: 0;
     text-transform: capitalize;
 }
-
-.opening h2
+.opening h1
 {
 	font-size: 1.6em;
+}
+.opening h2
+{
+	font-size: 1.2em;
 	font-weight: 600;
 }
 
@@ -369,14 +393,22 @@ em
     font-size: 1.5em;
 }
 
-button.more {
+.btn.more {
     position: relative;
     display: block;
     /*margin: 2em 0;*/
     margin-left: auto;
 }
 
-
+.btn.apply
+{
+    position: relative;
+    display: block;
+    /*margin: 2em 0;*/
+    margin-top: 2em;
+    margin-left: auto;
+    background-color: #4c9db4;
+}
 
 /* QUERIES */
 
