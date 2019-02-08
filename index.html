@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vital Game Studios</title>
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,500,600,700,800,900|Barlow:100,200,300,400,500,600,700,800,900|Teko:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/sdv8pip.css">
+	<!-- 
+	
+		== Dharma Gothic E ExLight ==
+		font-family: dharma-gothic-e, sans-serif;
+		font-weight: 200;
+		font-style: normal;
+
+		== Dharma Gothic E Light ==
+		font-family: dharma-gothic-e, sans-serif;
+		font-weight: 300;
+		font-style: normal;
+
+		== Dharma Gothic E Regular ==
+		font-family: dharma-gothic-e, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+
+		== Dharma Gothic E Regular Italic ==
+		font-family: dharma-gothic-e, sans-serif;
+		font-weight: 400;
+		font-style: italic;
+
+		== Dharma Gothic E Bold Italic ==
+		font-family: dharma-gothic-e, sans-serif;
+		font-weight: 700;
+		font-style: italic;
+
+		== Dharma Gothic E Bold ==
+		font-family: dharma-gothic-e, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+
+		== Dharma Gothic M Regular ==
+		font-family: dharma-gothic-m, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+
+		== Dharma Gothic M Regular Italic ==
+		font-family: dharma-gothic-m, sans-serif;
+		font-weight: 400;
+		font-style: italic;
+
+		== Dharma Gothic M Bold ==
+		font-family: dharma-gothic-m, sans-serif;
+		font-weight: 700;
+		font-style: normal;
+
+		== Dharma Gothic M Bold Italic ==
+		font-family: dharma-gothic-m, sans-serif;
+		font-weight: 700;
+		font-style: italic;	 -->
+</head>
+<body>
+	<style>
+		html
+		{
+			background-image: url(https://static.wixstatic.com/media/846c4d_a78e2059477f46a7b9eaceecbef075b7~mv2.png/v1/fill/w_1920,h_1080,al_t,q_85/846c4d_a78e2059477f46a7b9eaceecbef075b7~mv2.webp);
+			background-size: 	cover;
+			font-family: "Barlow", sans-serif;
+			background-attachment: fixed;
+			
+		}
+		body
+		{
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+		header, footer
+		{
+		    background: #000000;
+		    width: 	100%;
+	  		color: white;
+	  		position: fixed;
+	  		z-index: 9999;
+		}
+		header a, footer a, header img, footer img
+		{
+			color:white;
+			vertical-align:	middle;
+		}
+		header 
+		{
+			top:0;
+		}
+		footer
+		{
+			bottom: 0;	
+		}
+		
+		.page
+		{
+			background-color: #fff;
+		    width: 960px;
+		    margin: 1em auto 1em;
+		    padding: 3em;
+		    margin-top: 7em;
+			box-sizing: border-box;
+			border-radius: 0.1em;
+			box-shadow: 0em 0.2em 1.5em -0.4em #4F5F62;
+		}
+
+		.page:first-of-type{
+			margin-top: 8em;
+		}
+		.page:last-of-type{
+			margin-bottom: 8em;
+		}
+		.inner
+		{
+			border-top: 2px solid white;
+			border-bottom: 2px solid white;
+			padding: 	0.75em;
+			margin: 0.75em auto;	
+		}
+		
+		.container.fixed
+		{
+			width: 960px;	
+			margin: auto;
+		}
+		
+		.container.fluid
+		{
+			width: 100%;
+			margin: auto;
+		}
+		section
+		{
+			margin-top: 1em;
+			padding: 1em;
+		}
+		
+		h1,h2,h3,h4,h5,h6,
+		.nav-menu,
+		.brand
+		{
+			font-family: dharma-gothic-e, sans-serif;
+			font-style: normal;
+			font-weight: 400;			
+			text-transform: uppercase;
+			line-height: 1em;
+		}
+		
+		.brand, .nav-menu 
+		{
+			width:49%;
+			display: 	inline-block;	
+
+		}
+		
+		.brand
+		{
+			text-align: left;
+			font-size: 2.75em;
+			font-weight: 300;
+			/*letter-spacing: -0.05em;*/
+						
+		}
+		
+		.nav-menu
+		{
+			text-align: right;
+			font-size: 	2em;
+			font-weight: 200;
+			/*letter-spacing: -0.05em;*/
+		}
+		
+		.nav-menu a 
+		{
+			padding: 0.5em;
+		}
+		
+		.nav-menu a:hover
+		{
+			color:red;
+		}
+
+		.page.splash
+		 {
+			background-color: transparent;
+			text-align: center;
+			box-shadow: none;
+		}
+		.page.splash .logo{
+			box-shadow: 0em 0.2em 1.5em -0.4em #4F5F62;
+		}
+				
+		h1 
+		{
+		    font-size: 3em;
+		    position: relative;
+		    text-align: center;
+		}
+
+		h1:before 
+		{
+		    content: "";
+		    background-image: url(https://static.wixstatic.com/media/846c4d_b5b6622654134d5fbc0dbf26e9ea832c~mv2.png);
+		    position: absolute;
+		    margin: auto 0;
+		    width: 100%;
+		    top: -0.75em;
+		    height: 1em;
+		    background-repeat: no-repeat;
+		    background-size: auto;
+		    background-position: center center;
+		    background-size: 4em;
+		    /* text-align: center; */
+		    left: 0;
+		}
+		h2 
+		{
+			font-size: 2em;
+		}
+
+		h3 
+		{
+			font-size: 1.25em;
+		}
+		
+		.member .portrait 
+		{
+		    width: 23%;
+		    margin-right: 2%;
+		    vertical-align: middle;
+		    border-radius: 50%;
+		    text-align: center;
+		}
+
+		.member .info 
+		{
+			width: 72%;
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+		
+		.member .name, .member .title 
+		{
+		    margin: 0;
+		    display: inline-block;
+		    vertical-align: middle;
+		}
+		
+		.member .name
+		{
+			text-transform: capitalize;
+		}
+		
+		.member .title
+		{
+			margin-left: 0.5em;
+			color: red;
+		}
+		
+		.member .bio
+		{
+			margin-top: 0;
+		}
+	</style>
+<header id="site-header">
+	<div class="inner">
+		<div class="container fixed">
+			<div class="brand">
+				<a href="#"><img src="https://static.wixstatic.com/media/846c4d_c727231b2ca744f9a9c4ed665fcadd15~mv2.png/v1/fill/w_63,h_64,al_c,q_80,usm_0.66_1.00_0.01/vital_logo_splash.webp" alt=""/></a>
+				<a href="#">Vital Game Studios</a>
+			</div>
+			<nav class="nav-menu">
+				<a href="">About us</a></li>
+				<a href="">Careers</a></li>
+			</nav>
+		</div>
+	</div>
+</header>
+<section class="page splash">
+	<div class="container fixed">
+		<a href="/aboutus/"><img class="logo" src="https://static.wixstatic.com/media/846c4d_c727231b2ca744f9a9c4ed665fcadd15~mv2.png/v1/fill/w_630,h_630,al_c,q_85,usm_0.66_1.00_0.01/vital_logo_splash.webp" alt="Vital Game Studio Logo"/></a>
+	</div>
+</section>
+<div class="page about-us">
+	<div class="container fluid">
+		<article class="mission">
+			<h1>Our mission</h1>
+			<p>​Great games are made by happy people.</p>
+			<p>We are creating engaging games with powerful new technology, all in a collaborative workplace of our own design. With proficiency in single-player storytelling, virtual reality, online multiplayer, and crafting intriguing worlds, we have set out on our first adventure as a company.</p>
+			<p>From our inception, we are committed to creating games the <em>Vital</em> way.</p>
+			<p>As individuals, we believe it’s possible to make a workplace of our own choosing from the ground up. As a studio we understand that the best games are made by employees with healthy lives. We all work to make this studio vital, to support and enjoy our lives and to make better games because of it.</p>
+		</article>
+		<article class="team">
+			<h1>Our crew</h1>
+			<p>Vital Game Studios is a seasoned team of best-selling game developers.</p>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_e674de6252714ea48c61619f3b0cd8d1~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_e674de6252714ea48c61619f3b0cd8d1~mv2.webp" />
+				<div class="info">
+					<h2 class="name">Roberto Rodriguez</h2>
+					<h3 class="title">CTO</h3>
+					<p class="bio">Pinpointing Roberto's exact origins is difficult as carbon-dating technology just isn't able to go back that far in time yet. What we do know is that after working on a long list of games, from Spyro to Ratchet & Clank to Call of Duty and many more, he decided to establish Vital and assemble a new team. At first it seemed like he only communicated through a complex mix of sarcasm and dance, but after a break-through in understanding using a robot-with-a-heart as a translator, his prowess in the technical arts became very clear. Roberto has taken up the mantle of CTO in charge of the technical direction at Vital. He is also, by all accounts, a pretty good dad.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_2f14522822a74e72832b9d1ad141ada1~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_2f14522822a74e72832b9d1ad141ada1~mv2.webp" />
+				<div class="info">
+					<h2 class="name">Ronn LeFeuvre</h2>
+					<h3 class="title">Design Director</h3>
+					<p class="bio">Ronn started creating games at age 10, trying to sell (or at least give away) his creations to the neighborhood kids. Since then, he’s been a part of teams of all scales—from indie to AAA. He’s worked on games from some of the biggest franchises in the industry, including Ratchet & Clank: Size Matters, PlayStation All-Stars Battle Royale, and Call of Duty: Infinite Warfare. His career has taken him from being a gameplay programmer to his current role as design director at Vital. Ronn fills his non-development hours with board games, eating breakfast for each meal of the day, and occasional lock-picking.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_f781b58a3ff74c5d9d223a1c65c02f4a~mv2.png/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_f781b58a3ff74c5d9d223a1c65c02f4a~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">Alex Hampton</h3>
+					<h3 class="title">Senior Developer</h2>
+					<p class="bio">Alex has been creating world-class games for more than 13 years, with prominent titles including Call of Duty: Infinite Warfare, Ratchet and Clank: Size Matters, and Jak and Daxter: The Lost Frontier. He started his career holding the illustrious title of “Triceratops Programmer” at High Impact Games. More recently, he's held the position of senior designer at Infinity Ward, working on Call of Duty's multiplayer experience. Now he's joined the team at Vital, continuing his career of making outstanding games.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_2b2194e3cb874b98b68f6bb832c37a03~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_2b2194e3cb874b98b68f6bb832c37a03~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">Stephen Ratter</h3>
+					<h3 class="title">Art Director</h2>
+					<p class="bio">For more than 25 years, Stephen has been creating environment art and contributing to design for 16 shipped games including the original Medal of Honor trilogy, Call of Duty: Finest Hour (the first in the landmark franchise), the Resistance trilogy, Ratchet & Clank: A Crack in Time, and Here They Lie. Now joining his seasoned pals at Vital, Stephen is stepping into the role of art director, eager to shape the team's aesthetic presentation and craft fresh and intriguing visuals. He continues his career-long pursuit  of how lush, environmental storytelling reinforces the potency of a game's internal narrative. Mr. Ratter's choices (both conscious and irrational) are aided and abetted by his preoccupations with beekeeping, board games, backpacking, weird fiction, the desert, and 30 years of DJing a weekly radio show.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_36ea8262ee9d4266b1e39d5a93a2c16d~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_36ea8262ee9d4266b1e39d5a93a2c16d~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">Monica Grue</h3>
+					<h3 class="title">Lead Concept Artist</h2>
+					<p class="bio">Monica has been creating concept art for games for more than 10 years, beginning with the rebooted Medal of Honor (2010) and going on to contribute to projects such as Borderlands 2, The Evil Within, and Gears of War 4. She has also worked on various social and VR games, as well as designed for feature and televised animation. With a history of taking on leadership roles at small development studios, she is joining Vital Games as lead concept artist to develop fresh and unique visuals. In her free time, she loves painting personal illustrations, geeking out over health and fitness, and searching for the perfect cup of coffee in LA.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_54fe0cfad49e4dfabd94647d78ddaef0~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_54fe0cfad49e4dfabd94647d78ddaef0~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">John Swift</h3>
+					<h3 class="title">Senior Software Engineer</h2>
+					<p class="bio">John's been working in the games industry for the last six years on projects that include God of War (2018), Here they Lie, Yaiba: Ninja Gaiden Z, and several unannounced titles. As a self-taught programmer with a passion for exploring new technology, he’s thrilled to be building an engine for the next generation of XR experiences. In his spare time, you might find John plodding through a new RPG, curled up with a kindle, or soaring through the air in a paraglider.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_a8377c966c0b425e99d3d5509f15602d~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_a8377c966c0b425e99d3d5509f15602d~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">John Harries</h3>
+					<h3 class="title">Engineering Philosopher</h2>
+					<p class="bio">John has been developing award-winning video games and cutting-edge game engine technology for over three decades. His first games were on the Commodore 64 and since then has been a large part of development for the Call of Duty, Deus Ex, Thief, Sims, Transformers, True Crime, Kung Fu Panda, Fallout, and XCOM franchises, among many others. At Vital, John creates brand new gaming technology and cutting edge puns. When not in front of a computer, John is usually found at metal shows or showing victims pictures of his grandchildren.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_fed427225e7e4d9d89409cd5c8df5b1e~mv2.png/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_fed427225e7e4d9d89409cd5c8df5b1e~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">Rogelio Espinoza</h3>
+					<h3 class="title">Software Engineer</h2>
+					<p class="bio">Rogelio feels weird about writing in third person, but also succumbs easily to peer pressure. While he was always flirting with the idea of making games—specifically spending most of his life dreaming up fighting games—he really only started dipping his toes in the game industry in 2012, working at Club Lia (an educational games studio.) After five years, he was determined to join the big leagues and went to UCSC to get his master’s degree in games and playable media (Yes, it’s real. Google it). After a few odd and exciting jobs here and there, he joined Vital as a software engineer where he delightfully enjoys his position as permanent design support and experimenting with new tech. When not in front of a computer… wait, no nevermind, he seems incapable of surviving without being nearby a screen.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_a4b412a6e10049c1a36c8678c0a88570~mv2_d_2539_2540_s_4_2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_a4b412a6e10049c1a36c8678c0a88570~mv2_d_2539_2540_s_4_2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">Ricardo Tobon</h3>
+					<h3 class="title">Animation Director</h2>
+					<p class="bio">Ricardo has helped push the boundaries of performance and storytelling in visual effects, games and animation at studios that include Sony Computer Entertainment, Digital Domain, Weta Digital, and DreamWorks Animation. He is the author of the best seller “The Mocap Book” and has given lectures on the subject at universities, film festivals and international conferences. His extensive list of credits span from Dawn of the Planet of the Apes to Uncharted 3 and beyond. Ricardo has been an advocate of integrating traditional animation techniques with cutting edge technology and is excited about bringing such methods into Vital Game Studios.</p>
+				</div>
+			</section>
+			<section class="member">
+				<img class="portrait" src="https://static.wixstatic.com/media/846c4d_77d85b84856b4566828094abb4db1607~mv2.jpg/v1/fill/w_213,h_220,al_c,q_80,usm_0.66_1.00_0.01/846c4d_77d85b84856b4566828094abb4db1607~mv2.webp" alt="" />
+				<div class="info">
+					<h2 class="name">Mike Urda</h3>
+					<h3 class="title">Senior Programmer</h2>
+					<p class="bio">Hailing from the alternating snowy tundra and humid bog of Chicago, Mike has been making games in a variety of capacities for a mere decade and change. He got his start on a little gem called Fracture as a QA analyst, proceeded to help out on F3AR’s multiplayer modes as a Tech Designer, pivoted to an Associate Producer on a cancelled title before being summoned to California to work on God of War: Ascension and God of War (2018) as a build engineer/programmer. Mike spends his day discussing anything he can with his very bright coworkers, writing code that is ideally readable and functional (admittedly less than he would like), and brainstorming ways to streamline things. Exercise, Overwatch, League of Legends, social events of all types, and surprisingly reading are Mike’s preferred leisure activities.</p>
+				</div>
+			</section>
+		</article>
+	</div>
+</div> <!-- page -->
+<div class="page careers">
+	<div class="container fluid">
+		<article class="about-us">
+			<h1>A bit about us</h1>
+			<p>We are a team that is committed to making great games. We love talking about them, thinking about them, and of course, playing them. We want each new Vital team member to share our passion for creating great, compelling games. Does this sound like you?</p>
+			<p>Our process is highly collaborative and we value each other’s voices. Everyone is encouraged to contribute their opinions, discoveries and interpretations; in their own field as well as others. If you value conviction, speaking honestly, and sharing your personal perspective - you’ll fit right in.</p>
+			<p>From this collaborative environment, each person is empowered to take ideas and shape them, evolve them, and make them their own. We’re looking for people who enjoy a high level of ownership and thrive in this setting.</p>
+			<p>Do you consider yourself, shall we say, <em>Vital</em>?</p>
+		</article>
+		<article class="opportunities">
+			<h1>Opportunities</h1>
+
+		</article>
+	</div>
+</div>
+<footer>
+	<div class="inner">
+		<div class="container fixed">
+			<span class="copyright">2019 by Vital Reality</span>
+			<ul class="social-links">
+				<li class="email">E</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
