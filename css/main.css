@@ -17,6 +17,12 @@ a
 {
 	text-decoration: none;
 }
+
+.brand .company:hover
+{
+	opacity: 0.8;
+}
+
 header, footer
 {
     background: #000000;
@@ -55,7 +61,7 @@ footer
 	margin-top: 8em;
 }
 .page:last-of-type{
-	margin-bottom: 8em;
+	margin-bottom: 12em;
 }
 .inner
 {
@@ -92,12 +98,19 @@ h1,h2,h3,h4,h5,h6,
 	font-weight: 400;			
 	text-transform: uppercase;
 	line-height: 1em;
+	margin: 1em auto 0em;
+}
+
+p 
+{
+	margin: 0 auto 1em;
 }
 
 .brand, .nav-menu 
 {
 	width:49%;
-	display: 	inline-block;	
+	display: 	inline-block;
+	margin: 0 auto;	
 
 }
 
@@ -177,6 +190,14 @@ h3
 {
 	font-size: 1.25em;
 }
+strong
+{
+	font-weight: bold;
+}
+em
+{
+	font-style: italic;
+}
 
 .member .portrait 
 {
@@ -195,22 +216,29 @@ h3
 
 }
 
-.member .name, .member .title 
+.member .name,
+.member .title,
+.member .separator
 {
-    margin: 0;
+    margin: 0 0;
     display: inline-block;
     vertical-align: middle;
+	text-transform: capitalize;
 }
 
 .member .name
 {
-	text-transform: capitalize;
+	color:black;
 }
 
 .member .title
 {
-	margin-left: 0.5em;
-	color: red;
+	color: #4cb480;
+}
+
+.member .separator
+{
+	margin: 0.2em;
 }
 
 .member .bio
@@ -220,7 +248,7 @@ h3
 
 .copyright
 {
-
+	opacity: 0.35;
 }
 
 .copyright, 
