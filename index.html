@@ -58,7 +58,7 @@
 		font-weight: 700;
 		font-style: italic;	 -->
 </head>
-<body>
+<body onresize="OnResize()">
 <link rel="stylesheet" href="css/main.css">
 <header id="site-header">
 	<div class="inner">
@@ -92,5 +92,18 @@
 	</div>
 </footer>
 <script src="js/gol_anim.js"></script>
+<script>
+//	document.getElementsByClassName("logo")
+//Add on window resize event
+function OnResize()
+{
+	var logo = document.getElementsByClassName("logo")[0];
+	console.log("RESIZED!!!");
+
+}
+//Get Windows dimensions
+//Get lgoo dimensions
+
+</script>
 </body>
 </html>

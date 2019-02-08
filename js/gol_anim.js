@@ -107,7 +107,7 @@ function startAnimatedLogo(logoImg, logoAnim, cellSize) {
 
     //functions
     function tick() { //main loop
-        console.time("loop");
+        //console.time("loop");
 
         ctx.shadowBlur = 0;
         ctx.fillStyle = "white";
@@ -143,7 +143,7 @@ function startAnimatedLogo(logoImg, logoAnim, cellSize) {
             }
         }
 
-        console.timeEnd("loop");
+        //console.timeEnd("loop");
         requestAnimationFrame(tick);
     }
 
@@ -196,7 +196,7 @@ function startAnimatedLogo(logoImg, logoAnim, cellSize) {
                 }
             }
         }
-        console.log(liveCount / 100);
+        //console.log(liveCount / 100);
     }
 
     function updateGrid() { //perform one iteration of grid update

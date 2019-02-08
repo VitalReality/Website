@@ -225,7 +225,6 @@ em
     vertical-align: middle;
 	text-transform: capitalize;
 }
-
 .member .name
 {
 	color:black;
@@ -279,7 +278,8 @@ em
     list-style: none;
     display: inline-block;
     width: 2em;
-    height: 2em;	text-align: center;
+    height: 2em;	
+    text-align: center;
 	vertical-align: middle;
 	line-height: 2em;
 	font-size: 1.5em;
@@ -289,3 +289,68 @@ em
 {
 	background-color: red;
 }
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) 
+{
+	body
+	{
+	}
+	.member .portrait,
+	.member .info,
+	.member .name,
+	.member .title,
+	.member .bio {
+		display: block;
+		width: 100%;
+	
+	}
+
+	.member .name,
+	.member .title{
+		text-align: center;
+	}
+	.member .name{
+		font-size: 8em;
+	}
+	.member .title{
+		font-size: 5em;
+	}
+	.member .separator {
+		display: none;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		font-size: 6em;
+	}
+	.brand,
+	.nav-menu
+	{
+		font-size: 4em;
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.brand
+	{
+		font-size: 6em;
+	}
+
+	.brand .logo
+	{
+		transform: scale(1.5);
+		margin: 0.25em;
+	}
+
+	.social-links .link .icon
+	{
+		line-height: 2em;
+		font-size: 4em;
+		margin: 0.25em;
+	}
+}
+
