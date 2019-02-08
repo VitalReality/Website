@@ -156,7 +156,7 @@ p
 
 .nav-menu a:hover
 {
-	color:red;
+	color:#e43000;
 }
 
 .page.splash
@@ -310,7 +310,7 @@ em
 
 .social-links .link .icon:hover
 {
-	background-color: red;
+	background-color: #e43000;
 }
 
 /* CAREERS */
