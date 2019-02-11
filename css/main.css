@@ -1,8 +1,8 @@
 
-html, body
+html
 {
 	min-height: 100%;
-	background-image: linear-gradient(#4c9db4, #4cb480), url(../img/site/brand-gradient.jpg);
+	background-image: linear-gradient(#4c9db4, #4cb480);
 	background-repeat: repeat;
 	background-position: center center;
 	background-color: #4cb480;
@@ -12,7 +12,6 @@ html, body
 	font-size: 18px;
 	margin: 0;
 	padding: 0;
-
 }
 
 a,
