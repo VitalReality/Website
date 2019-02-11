@@ -1,4 +1,9 @@
 
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
 html
 {
 	min-height: 100%;
@@ -10,8 +15,6 @@ html
 	background-attachment: fixed;
 	font-family: "Barlow", sans-serif;
 	font-size: 18px;
-	margin: 0;
-	padding: 0;
 }
 
 a,
