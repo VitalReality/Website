@@ -466,20 +466,41 @@ em
 }
 
 
+.application
+{
+    margin-top: 3em;
+    text-align: right;
+}
+
+.application .instruction
+{
+	margin:1em;
+	vertical-align: middle;
+	font-size: 1em;
+}
+
 .btn.more {
     margin-left: auto;
 }
 
 .btn.apply
 {
-    margin-top: 2em;
-    margin-left: auto;
     background-color: #4c9db4;
 }
+
+.application .btn
+{
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+}
+
 .opening.filled .btn.more
 {
 	background-color: #888;
 }
+
+
 
 /* QUERIES */
 
