@@ -20,7 +20,8 @@ html
 a,
 button,
 div,
-img
+img,
+.member
 {
 	transition: background-color 0.65s, color 0.65s, opacity 0.65s;
 }
@@ -273,13 +274,34 @@ em
 	font-style: italic;
 }
 
-.member .portrait 
+.member:hover
 {
-    width: 23%;
-    margin-right: 2%;
+	background-color: #ecefef;
+	border-radius: 1%;
+}
+.member:hover .portrait > img
+{
+	opacity: 1;
+}
+
+.member .portrait
+{
+	/*background-image: linear-gradient(#4c9db4, #4cb480);*/
+	background-color: #4c9db4;
+    width: 24%;
+    margin-right: 3%;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+.member .portrait > img
+{
+	width: 100%;
     vertical-align: middle;
     border-radius: 50%;
-    text-align: center;
+    opacity: 0.5;
 }
 
 .member .info 
@@ -497,7 +519,7 @@ em
 			border-top: 3px solid #eee;
 			padding: 4em 0;
 		}
-		.member .portrait,
+		.member .portrait > img,
 		.member .info,
 		.member .name,
 		.member .title,
@@ -507,7 +529,7 @@ em
 			margin: 0 auto;
 		}
 
-		.member .portrait
+		.member .portrait > img
 		{
 			width: 50%;
 		}
