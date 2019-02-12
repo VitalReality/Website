@@ -100,10 +100,16 @@
 //Add on window resize event
 function OnResize()
 {
-	var logo = document.getElementsByClassName("logo")[0];
-	console.log("RESIZED!!!");
+	var splashPage = document.getElementsByClassName("page splash")[0];
+	var splashContainer = splashPage.getElementsByClassName("container")[0];
+
+	splashContainer.style.position = "absolute";
+	splashContainer.style.top = (window.innerHeight - splashContainer.offsetHeight) * 0.5 + "px";
+	splashContainer.style.left = (window.innerWidth - splashContainer.offsetWidth) * 0.5 + "px";
 
 }
+
+OnResize();
 //Get Windows dimensions
 //Get lgoo dimensions
 
