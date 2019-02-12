@@ -555,6 +555,7 @@ em
 		h1,h2,h3,h4,h5,h6
 		{
 			font-size: 6em;
+			text-align: center;
 		}
 		
 		.page h1
@@ -606,14 +607,28 @@ em
 			/*margin-left: 0.5em;*/
 		}
 
-		.btn.more,
-		.btn.apply
+		.btn,
+		.application .btn,
+		.application .instruction
 		{
 			width: 100%;
 			box-sizing: border-box;
 			padding: 1em -0px;
+			display: block;
+			margin: 1em 0;
+			text-align: center;
+		}
+		.btn,
+		.application .btn
+		{
+			font-size: 3em;
 		}
 		
+		.application .instruction
+		{
+			font-size: 2.5em;
+		}
+
 		.opening
 		{
 			border-top-width: 10px;
