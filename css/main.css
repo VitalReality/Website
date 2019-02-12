@@ -608,25 +608,32 @@ em
 		}
 
 		.btn,
+		.btn.more,
+		.btn.apply,
 		.application .btn,
 		.application .instruction
 		{
 			width: 100%;
 			box-sizing: border-box;
-			padding: 1em -0px;
 			display: block;
-			margin: 1em 0;
 			text-align: center;
 		}
+
 		.btn,
+		.btn.more,
+		.btn.apply,
 		.application .btn
 		{
+			padding: 1em -0px;
 			font-size: 3em;
+			margin: 1em 0;
 		}
 		
 		.application .instruction
 		{
 			font-size: 2.5em;
+			margin: 0;
+			padding: 0;
 		}
 
 		.opening
