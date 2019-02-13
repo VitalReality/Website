@@ -20,7 +20,8 @@ html
 a,
 button,
 div,
-img
+img,
+input
 {
 	transition: background-color 0.65s, color 0.65s, opacity 0.65s;
 }
@@ -82,6 +83,8 @@ button,
     text-align: center;
     vertical-align: middle;
 	font-size: inherit;
+	border-radius: 200px;
+	cursor: pointer;
 }
 
 a.btn
@@ -525,7 +528,91 @@ footer .copyright,
 	background-color: #888;
 }
 
+/* FORM */
 
+.page.about-us
+{
+	padding: 0;
+	overflow: hidden;
+}
+
+.page.about-us article
+{
+	padding: 1em 3em 3em;
+}
+
+.mc-field-group {
+    padding: 0.3em;
+    /* columns: 2; */
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+label {
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    padding: 0.5em;
+    width: 100%;
+    background-color: #f6f6f6;
+    color: #6c6c6c;
+    font: inherit;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.indicates-required {
+    font-size: 0.7em;
+    text-align: center;
+}
+
+div#mc_embed_signup_scroll {
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.page.about-us .newsletter .btn {
+    margin: 2em auto;
+}
+
+article.newsletter {
+    color: white;
+    background-color: #353535;
+    padding: 1em;
+    box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.5);
+    /* margin-bottom: 2em; */
+}
+
+article.games {
+    padding: 1em;
+}
+
+.validate h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+div#mc_embed_signup {
+    margin-bottom: 1em;
+}
+
+.mc-field-group label {
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+    color: #4bb480;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0.4em 0;
+}
 
 /* QUERIES */
 
