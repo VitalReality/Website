@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home | Vital Game Studios</title>
+	<title>About Us | Vital Game Studios</title>
 	<link rel="icon" 
       type="image/png" 
-      href="./favicon.png">
+      href="../favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,500,600,700,800,900|Barlow:100,200,300,400,500,600,700,800,900|Teko:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/sdv8pip.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -61,30 +61,33 @@
 		font-weight: 700;
 		font-style: italic;	 -->
 </head>
-<body onresize="OnResize()">
-<link rel="stylesheet" href="css/main.css">
+<body>
+<link rel="stylesheet" href="../css/main.css">
 <header id="site-header">
 	<div class="inner">
 		<div class="container fixed">
 			<div class="brand">
-				<a class="logo image" href="#"><img src="img/site/vital_game_studios_logo_sm.png" alt="Vital Game Studios Logo"/></a>
+				<a class="logo image" href="#"><img src="../img/site/vital_game_studios_logo_sm.png" alt=""/></a>
 				<canvas class="logo gameoflife" style="display:none;"></canvas>
-				<a class="company" href="./">Vital Game Studios</a>
+				<a class="company" href="../">Vital Game Studios</a>
 			</div>
 			<nav class="nav-menu">
-				<a href="games/">Games</a>
-				<a href="about-us/">About us</a></li>
-				<a href="careers/">Careers</a></li>
+				<a class="active" href="./">Games</a></li>
+				<a href="../about-us/">About us</a></li>
+				<a href="../careers/">Careers</a></li>
 			</nav>
 		</div>
 	</div>
 </header>
-<section class="page splash">
+<div class="page fixed fixed about-us">
 	<div class="container">
-		<a class="logo image" href="/aboutus/"><img src="img/site/vital_game_studios_logo.png" alt="Vital Game Studio Logo"/></a>
-		<canvas class="logo gameoflife" style="display:none;"></canvas>
+		<article class="games">
+			<h1>Our games</h1>
+			<p>You probably came to this page to see what game we’re working on, and, well this is a bit embarrassing as you did just click on “Games”, but… we just aren't ready to show you yet.</p>
+			<p>How about this &ndash; when we are ready you'll be the first person we tell.</p> 
+		</article>
 	</div>
-</section>
+</div> <!-- page -->
 <footer>
 	<div class="inner">
 		<div class="container fixed">
@@ -97,25 +100,6 @@
 		</div>
 	</div>
 </footer>
-<script src="js/gol_anim.js"></script>
-<script>
-//	document.getElementsByClassName("logo")
-//Add on window resize event
-function OnResize()
-{
-	var splashPage = document.getElementsByClassName("page splash")[0];
-	var splashContainer = splashPage.getElementsByClassName("container")[0];
-
-	splashContainer.style.position = "absolute";
-	splashContainer.style.top = (window.innerHeight - splashContainer.offsetHeight) * 0.5 + "px";
-	splashContainer.style.left = (window.innerWidth - splashContainer.offsetWidth) * 0.5 + "px";
-
-}
-
-OnResize();
-//Get Windows dimensions
-//Get lgoo dimensions
-
-</script>
+<script src="../js/gol_anim.js"></script>
 </body>
 </html>
