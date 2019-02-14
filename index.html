@@ -113,18 +113,8 @@
 <script>
 //	document.getElementsByClassName("logo")
 //Add on window resize event
-function OnResize()
-{
-	var splashPage = document.getElementsByClassName("page splash")[0];
-	var splashContainer = splashPage.getElementsByClassName("container")[0];
-
-	splashContainer.style.position = "absolute";
-	splashContainer.style.top = (window.innerHeight - splashContainer.offsetHeight) * 0.5 + "px";
-	splashContainer.style.left = (window.innerWidth - splashContainer.offsetWidth) * 0.5 + "px";
-
-}
-
 OnResize();
+document.onkeydown = OnKeyDownListener;
 //Get Windows dimensions
 //Get lgoo dimensions
 

@@ -16,7 +16,9 @@ html
 	font-family: "Barlow", sans-serif;
 	font-size: 18px;
 }
-
+canvas,
+header,
+footer,
 a,
 button,
 div,
@@ -806,3 +808,22 @@ div#mc_embed_signup {
 
 	}
 
+
+.secret-sequence
+{
+	background-image: none;
+	background-color: black;
+}
+
+.secret-sequence body > header,
+.secret-sequence body > footer
+{
+	opacity: 0;
+}
+
+.secret-sequence .logo.gameoflife
+{
+	width: auto;
+	box-shadow: none;
+	cursor: pointer;
+}

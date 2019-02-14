@@ -1,4 +1,4 @@
-function startAnimatedLogo(logoImg, logoAnim, cellSize) {
+function startAnimatedLogo(logoImg, logoAnim, cellSize, autoPlay = false) {
 
     var wrapAroundCells = true;
     var allowReset = true;
@@ -25,8 +25,8 @@ function startAnimatedLogo(logoImg, logoAnim, cellSize) {
     var blurCounter = 0;
     var simGameOfLife = false;
 
-    // Add event listener for `click` events.
-    logoAnim.addEventListener('click', function(event) {
+    function playAnimation()
+    {
         if (simGameOfLife && allowReset) {
             drawDot = true;
             simGameOfLife = false;
@@ -37,6 +37,12 @@ function startAnimatedLogo(logoImg, logoAnim, cellSize) {
         } else {
             simGameOfLife = true;
         }
+
+    }
+
+    // Add event listener for `click` events.
+    logoAnim.addEventListener('click', function(event) {
+        playAnimation();
     }, false);
 
     var vitalLogo = [
@@ -266,13 +272,89 @@ function startAnimatedLogo(logoImg, logoAnim, cellSize) {
 
     initAnim();
     fillArray(vitalLogo);
-    //	fillRandom(); //create the starting state for the grid by filling it with random cells
+    //  fillRandom(); //create the starting state for the grid by filling it with random cells
     tick(); //call main loop
+    if(autoPlay)
+    {
+        playAnimation();
+    }
 
 }
 
 var logoImage = document.getElementsByClassName("logo image");
 var logoAnim = document.getElementsByClassName("logo gameoflife");
+var logoHeight;
+var secretAnim = false;
 
 startAnimatedLogo(logoImage[0], logoAnim[0], 1);
 startAnimatedLogo(logoImage[1], logoAnim[1], 10);
+
+function OnResize()
+{
+    var splashPage = document.getElementsByClassName("page splash")[0];
+    var splashContainer = splashPage.getElementsByClassName("container")[0];
+
+    splashContainer.style.position = "absolute";
+    splashContainer.style.top = (window.innerHeight - splashContainer.offsetHeight) * 0.5 + "px";
+    splashContainer.style.left = (window.innerWidth - splashContainer.offsetWidth) * 0.5 + "px";
+
+}
+
+// SEQUENCE
+var secretSequence = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a", "Enter"];
+var keyIndex = 0;
+
+function EndSequence()
+{
+    secretAnim = false;
+    var htmlEl = document.getElementsByTagName("html")[0];
+    htmlEl.classList.remove("secret-sequence");
+    logoAnim[1].style.height = logoHeight;
+    logoAnim[1].removeEventListener("click", EndSequence);
+
+    startAnimatedLogo(logoImage[1], logoAnim[1], 10, false);
+    OnResize();
+}
+
+
+function InitiateSequence()
+{
+    secretAnim = true;
+    var htmlEl = document.getElementsByTagName("html")[0];
+    htmlEl.classList.add("secret-sequence");
+    logoHeight = logoAnim[1].style.height;
+    logoAnim[1].style.height = window.innerHeight+"px";
+    logoAnim[1].addEventListener("click", EndSequence);
+    startAnimatedLogo(logoImage[1], logoAnim[1], 10, true);
+    OnResize();
+}
+
+
+function OnKeyDownListener(evt)
+{
+    if(!secretAnim)
+    {    // console.log(evt.key + " has been pressed.");
+        if(evt.key === secretSequence[0] && keyIndex > 1)
+        {
+            keyIndex = 1;
+        }
+        if(evt.key === secretSequence[keyIndex])
+        {
+            // console.log("gooooood!");
+            keyIndex++;
+        }
+        else
+        {
+            // console.log("baaaaaad!");
+            keyIndex = 0;
+            return;
+        }
+
+        if(keyIndex >= secretSequence.length)
+        {
+            keyIndex = 0;
+            // console.log("KONAMI COOOOOODE!!!!!!");
+            InitiateSequence();
+        }
+    }
+}
