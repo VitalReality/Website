@@ -13,7 +13,7 @@ html
 	background-color: #4cb480;
 	/*background-size: 	cover;*/
 	background-attachment: fixed;
-/*	font-family: "Barlow", sans-serif;*/
+	font-family: "Barlow", sans-serif;
 	font-size: 18px;
 }
 canvas,
@@ -163,7 +163,7 @@ h1,h2,h3,h4,h5,h6,
 .nav-menu,
 .brand
 {
-/*	font-family: dharma-gothic-e, sans-serif;*/
+	font-family: dharma-gothic-e, sans-serif;
 	font-style: normal;
 	font-weight: 400;			
 	text-transform: uppercase;
@@ -173,7 +173,7 @@ h1,h2,h3,h4,h5,h6,
 
 p 
 {
-/*	font-family: "Barlow", sans-serif;*/
+	font-family: "Barlow", sans-serif;
 	margin: 0 auto 1em;
 }
 
@@ -422,7 +422,7 @@ footer .copyright,
     padding: 2em;
     border-top-width: 3px;
     border-top-style: solid;
-/*    font-family: "Barlow", sans-serif;*/
+    font-family: "Barlow", sans-serif;
     margin-bottom: 1em;
 }
 
@@ -434,7 +434,12 @@ footer .copyright,
 {
 	border-top-color: gray;
 	opacity: 0.65;
-};
+}
+
+.opening.filled:hover
+{
+	opacity: 0.85;
+}
 
 .opening h1,
 .opening h2,
@@ -443,7 +448,7 @@ footer .copyright,
 .opening h5,
 .opening h6
 {
-/*	font-family: "Barlow", sans-serif;*/
+	font-family: "Barlow", sans-serif;
 }
 .opening .role
 {
@@ -619,10 +624,10 @@ div#mc_embed_signup {
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2) 
 	{
-		/*.page:first-of-type
+		.page:first-of-type
 		{
 			margin-top: 14.5em;
-		}*/
+		}
 		.member
 		{
 			border-top: 3px solid #eee;
